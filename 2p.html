@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	<title>PONG GAME</title> 
+    `
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="2p.css"> 
+</head> 
+
+<body  class="d-flex align-items-center justify-content-center "  style="height: 100vh; width: 100vw;"> 
+
+
+	<div class="board rounded-3"
+  style="height: 85vh; width: 80vw"> 
+  
+		<div class='ball position-fixed rounded-circle'> 
+			<div class="ball_effect rounded-circle" style="height: 100%; width: 100%;"></div> 
+		</div> 
+		<audio src="./Assets/ball_hit.00202396.wav" id="audio"></audio>
+        <audio src="./Assets/Game Over.3f8cf963.mp3" id="audio1"></audio>
+
+
+		<div class="paddle_1 paddle rounded-circle position-fixed" style="height: 100px; width: 18px; top: calc(7.5vh + 55px); left: calc(10vw + 30px);"></div> 
+
+		<div class="paddle_2 paddle rounded-circle position-fixed " style="height: 100px; width: 18px;"></div>
+
+		<h1 class="player_1_score position-fixed h-50 w-50 mt-3">0</h1> 
+    
+		<h1 class="player_2_score position-fixed h-50 w-50 mt-3 m-3 auto auto auto">0</h1> 
+
+		<h1 class="message position-fixed h-10 w-30 "> 
+			Press Enter to Play Pong 
+		</h1>
+		 
+	</div> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"></script>
+
+	<script src="2p.js"></script> 
+</body> 
+
+</html>

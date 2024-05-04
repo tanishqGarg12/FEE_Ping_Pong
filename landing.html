@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+.landing-page {
+  position: relative;
+  background-image: url('./bg.jpg');
+  background-size: cover;
+}
+
+.landing-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./Assets/bg.jpg');
+  background-size: cover;
+  filter: blur(8px); 
+
+}
+  </style>
+</head>
+<body>
+  <div class="landing-page d-flex vh-100 justify-content-center align-items-center text-center text-white">
+    <div>
+      <h1 class="display-1 font-weight-bold animate__animated animate__fadeInUp">Welcome to My PING PONG</h1>
+      <div>
+      </div>
+        <a href="1p.html" class="btn btn-primary btn-lg font-weight-bold animate__animated animate__bounceIn" target="_self">1P EASY</a>
+        <a href="1pHArd.html" class="btn btn-danger btn-lg font-weight-bold animate__animated animate__bounceIn" target="_blank">1p Hard</a>
+        <a href="2p.html" class="btn btn-success btn-lg font-weight-bold animate__animated animate__bounceIn" target="_blank">2P...</a>
+        <a href="ai.html" class="btn btn btn-light btn-lg font-weight-bold animate__animated animate__bounceIn" target="_blank">Computer</a>
+        <a href="aiHard.html" class="btn btn-danger btn-lg font-weight-bold animate__animated animate__bounceIn" target="_blank">Computer-Hard</a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</body>
+</html>
